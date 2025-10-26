@@ -18,20 +18,28 @@ console.log('test:', argComputerMove, argPlayerMove);
 
   if (argComputerMove == 'kamień' && argPlayerMove == 'papier'){
     printMessage('Ty wygrywasz!');
+    return 'player';
 } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
     printMessage('Komputer wygrywa!');
+    return 'computer';
 } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
     printMessage('Ty wygrywasz!');
+    return 'player';
 } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
     printMessage('Komputer wygrywa!');
+    return 'computer';
 } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
     printMessage('Komputer wygrywa!');
+    return 'computer';
 } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
+    return 'player';
 } else if (argComputerMove == argPlayerMove){
     printMessage('Remis !');
+    return 'draw';
 } else if (argPlayerMove == 'nieznany ruch'){
     printMessage('Oh Ty oszuście!')
+    return 'invalid';
 }
 }
 
