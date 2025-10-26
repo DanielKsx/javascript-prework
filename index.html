@@ -3,14 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Fredoka+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
+		<header class="header">
+			<h1 class="title">Kamień, Papier, Nożyce</h1>
+			<p class="intro">Witaj w grze! Wybierz swój ruch, aby zmierzyć się z komputerem.<br>
+				Punktacja aktualizuje się automatycznie — powodzenia!</p>
+		</header>
+		<div id="buttons" class="center">
+			<button id="play-rock" class="btn">Kamień</button>
+			<button id="play-paper" class="btn">Papier</button>
+			<button id="play-scissors" class="btn">Nożyce</button>
 		</div>
 		<div id="messages"></div>
 		<div id="result">0 - 0</div>
